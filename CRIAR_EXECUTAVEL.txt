@@ -1,0 +1,29 @@
+# ========================================
+# INSTRUÇÕES PARA CRIAR O EXECUTÁVEL
+# ========================================
+
+# 1. Instale o PyInstaller (execute no PowerShell):
+pip install pyinstaller
+
+# 2. Crie o executável (execute no PowerShell na pasta do projeto):
+pyinstaller --onefile --windowed --name "Clinica_Laura_Myrna" main.py
+
+# 3. O executável estará na pasta dist/
+
+# 4. IMPORTANTE: Copie APENAS o arquivo .exe da pasta dist/ para onde desejar usar
+
+# ========================================
+# OPÇÕES DO PYINSTALLER
+# ========================================
+# --onefile: Cria um único arquivo executável
+# --windowed: Remove a janela do console (apenas a interface gráfica aparece)
+# --name: Nome do executável final
+# --icon: Adicione um ícone personalizado (se tiver)
+
+# ========================================
+# OBSERVAÇÕES IMPORTANTES
+# ========================================
+# - O arquivo clinica.db será criado automaticamente no mesmo local do .exe
+# - Mantenha o .exe e o clinica.db na mesma pasta
+# - Faça backup regular do arquivo clinica.db
+# - O executável pode ser usado em qualquer computador Windows sem precisar instalar Python
